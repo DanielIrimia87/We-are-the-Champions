@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>We are the Champions</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+        <title>We are the Champions</title>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+
+    <body>
+        <div class="container">
+
+            <header>
+                <img src="/assets/freddie.png" alt="Freddie Mercury" />
+                <h1 class="title">We are the Champions</h1>
+            </header>
+
+            <main>
+                <form class="form">
+                    <textarea id="description" class="description" name="description" placeholder="Write your endorsement here"></textarea>
+                    <input type="text" id="inputFrom" name="from" placeholder="From" />
+                    <input type="text" id="inputTo" name="to" placeholder="To" />
+                    <button id="publishBtn" type="submit">Publish</button>
+                </form>
+
+                <section class="endorsements">
+                    <h2> - Endorsements - </h2>
+
+                    <article class="endorsement">
+                        <h3 class="endorsement-header">To Leanne</h3>
+                        <p class="endorsement-content">Leanne! Thank you so much for helping me with the March accounting. Saved so much time because of you! 💜 Frode</p>
+                        <footer class="endorsement-footer">
+                            <span class="endorsement-author">From Frode</span>
+                            <span class="endorsement-likes">❤️ 4</span>
+                        </footer>
+                    </article>
+
+                    <article class="endorsement">
+                        <h3 class="endorsement-header">To Abdellah</h3>
+                        <p class="endorsement-content">That transcription feature you completed for Scrimba 3.0 is amazing. I know you’ve been working hard on it for several months now. 👏👏👏 Really good work 🙌</p>
+                        <footer class="endorsement-footer">
+                            <span class="endorsement-author">From Sindre</span>
+                            <span class="endorsement-likes">❤️ 7</span>
+                        </footer>
+                    </article>
+
+                    <article class="endorsement">
+                        <h3 class="endorsement-header">To Bob</h3>
+                        <p class="endorsement-content">Hi Bob! Your React Router course is so good. The students are going to LOVE IT. I’m so excited for the launch :) 🔥</p>
+                        <footer class="endorsement-footer">
+                            <span class="endorsement-author">From Per</span>
+                            <span class="endorsement-likes">❤️ 20</span>
+                        </footer>
+                    </article>
+
+                </section>
+            </main>
+        </div>
+    </body>
 </html>
