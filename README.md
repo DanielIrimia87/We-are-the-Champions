@@ -2,8 +2,8 @@
 
 
 ## Live Demo
-[We are the Champions](https://we-are-the-champions-1.web.app/)
-[![Netlify Status]()]
+- [We are the Champions](https://danielirimia87.github.io/We-are-the-Champions/)
+- [Netlify](https://the-champions-appreciation.netlify.app/)
 
 ## Getting Started
 To get a local copy up and running follow these simple steps.
@@ -27,10 +27,10 @@ This project is a simple app about Endorsements. It is a simple app that allows 
 ## Project Requirements
 - Build from scratch
 - The app should be responsive
-- The app should have a landing page that shows a list of endorsements.
-- Follow the design from figma [We are the Champions](https://www.figma.com/file/SgWlM7qkqTQa7fiGEcLKew/We-are-the-Champions?node-id=0%3A1&mode=dev)
-- Using Firebase realtime database
-- Update in realtime
+- The app should have a landing page with a list of endorsements.
+- Follow the design from Figma [We are the Champions](https://www.figma.com/file/SgWlM7qkqTQa7fiGEcLKew/We-are-the-Champions?node-id=0%3A1&mode=dev)
+- Using Firebase real-time database
+- Update in real-time
 
 ## Stretch goal:
 - Add From and To input fields to the form
