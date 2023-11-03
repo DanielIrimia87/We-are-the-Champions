@@ -18,3 +18,34 @@ dist/
 # Ignore OS-specific files
 .DS_Store
 Thumbs.db
+
+# Ignore backup files
+*.bak
+*.swp
+*.swo
+*.swn
+
+# Ignore misc
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.log
+*.out
+*.pid
+*.seed
+*.pid.lock
+*.log.lck
+*.gcda
+*.gcno
+*.gcov
+*.coverage
+*.nyc_output
+*.lcov
+*.lsof
+*.sln.docstates
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
