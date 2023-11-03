@@ -1,5 +1,24 @@
 # We are the Champions
 
+Quick start:
+
+```
+$ npm install
+$ npm start
+````
+Head over to https://vitejs.dev/ to learn more about using vite.
+
+## Table of Contents
+- [About the Project](#about-the-project)
+- [Live Demo](#live-demo)
+- [Getting Started](#getting-started)
+- [Built With](#built-with)
+- [Introduction](#introduction)
+- [Project Requirements](#project-requirements)
+- [Stretch goal](#stretch-goal)
+- [Author](#author)
+- [About Scrimba](#about-scrimba)
+- [License](#license)
 
 ## Live Demo
 - [We are the Champions](https://danielirimia87.github.io/We-are-the-Champions/)
@@ -10,19 +29,36 @@ To get a local copy up and running follow these simple steps.
 ### Prerequisites
 - A modern browser
 - A code editor
+- Node.js
+- NPM
 
+### Setup
+1. Clone the repo
+```
+git clone
+```
+2. Install NPM packages
+```
+npm install
+```
+3. Start the server
+```
+npm start
+```
+
+## About the Project
 
 ## Built With
 - HTML
 - CSS
 - JavaScript
+- Vite
+- Firebase
 
 ## Introduction
-
 This is a solo project from the [Scrimba](https://scrimba.com/learn/frontend) The Frontend Career Path.
-
 This project is a simple app about Endorsements. It is a simple app that allows you to add, edit, and delete endorsements. It also allows you to filter the endorsements by the name of the person who gave the endorsement.
-
+The app is built with Vite and Firebase.
 
 ## Project Requirements
 - Build from scratch
@@ -53,5 +89,29 @@ The Frontend Developer Career Path aims to teach you everything you need to beco
 - [All courses](https://scrimba.com/allcourses)
 - [The Frontend Career Path](https://scrimba.com/learn/frontend)
 - [Become a Scrimba Pro member](https://scrimba.com/pricing)
+
+## 🤝 Contributing
+Contributions, issues, and feature requests are welcome!
+
+## Show your support
+
+## License
+Distributed under the MIT License. See `LICENSE` for more information.
+<!-- CONTACT -->
+## Contact
+Daniel Irimia - [@DanielIrimia87](https://github.com/DanielIrimia87)
+
+Project Link: []()
+
+<!-- ACKNOWLEDGEMENTS -->
+##Acknowledgments
+- [Scrimba](https://scrimba.com/learn/frontend)
+- [Figma](https://www.figma.com/file/SgWlM7qkqTQa7fiGEcLKew/We-are-the-Champions?node-id=0%3A1&mode=dev)
+- [Vite](https://vitejs.dev/)
+- [Firebase](https://firebase.google.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [Best-README-Template](
+)
+- [GitHub Pages](https://danielirimia87.github.io/We-are-the-Champions)
 
 Happy Coding!
