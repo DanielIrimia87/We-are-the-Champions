@@ -18,7 +18,7 @@ Head over to https://vitejs.dev/ to learn more about using vite.
 - [Stretch goal](#stretch-goal)
 - [Author](#author)
 - [About Scrimba](#about-scrimba)
-- [License](#license)
+- [Acknowledgments](#acknowledgments)
 
 ## Live Demo
 - [We are the Champions](https://danielirimia87.github.io/We-are-the-Champions/)
@@ -95,23 +95,16 @@ Contributions, issues, and feature requests are welcome!
 
 ## Show your support
 
-## License
-Distributed under the MIT License. See `LICENSE` for more information.
-<!-- CONTACT -->
 ## Contact
 Daniel Irimia - [@DanielIrimia87](https://github.com/DanielIrimia87)
 
-Project Link: []()
-
-<!-- ACKNOWLEDGEMENTS -->
-##Acknowledgments
+## Acknowledgments
 - [Scrimba](https://scrimba.com/learn/frontend)
 - [Figma](https://www.figma.com/file/SgWlM7qkqTQa7fiGEcLKew/We-are-the-Champions?node-id=0%3A1&mode=dev)
 - [Vite](https://vitejs.dev/)
 - [Firebase](https://firebase.google.com/)
 - [Google Fonts](https://fonts.google.com/)
-- [Best-README-Template](
-)
+- [Best-README-Template]()
 - [GitHub Pages](https://danielirimia87.github.io/We-are-the-Champions)
 
 Happy Coding!
