@@ -11,50 +11,210 @@ html, body {
     box-sizing: border-box;
 }
 
-/* Mobile First */
-.container {
+/* === Typography === */
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+h2, h3 {
+    font-weight: 500;
+}
+
+/* === Nav === */
+
+nav {
+    width: 100%;
+    border-radius: 0 0 0.5rem 0.5rem;
     background-color: #1b1924;
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    padding: 1rem;
-    margin: 0 auto;
 }
 
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 }
 
 header img {
     width: 90px;
     max-width: 100%;
+    height: auto;
+    margin: 0.5rem 0;
 }
 
-header h1 {
+.app-title {
+    font-size: 1.5rem;
+    text-align: center;
     color: #FFF;
     font-family: Josefin Sans;
-    font-size: 1.5rem;
-    line-height: normal;
+    margin-bottom: 0.5rem;
 }
 
-main {
+/* === Sections === */
+
+.auth-fields-and-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+/* === User Section === */
+
+.user-section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 0.8em;
+}
+
+.user-section img {
+    width: 3.75em;
+    height: 3.75em;
+    border-radius: 100%;
+    margin-top: 0.5rem;
+    border: 3px solid #000000;
+}
+
+/* .user-section h2 {
+    font-size: 1.25rem;
+    font-weight: 700
+} */
+
+/* === Post Section === */
+
+.post-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+/* === Posts Section === */
+
+.posts-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+	margin-bottom: 1.8em;
+}
+
+/* == Posts Section - Filters == */
+
+.filters-and-posts-section {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+}
+
+.filters-section {
+    display: flex;
+    gap: 0.4em;
+}
+
+.filter-btn {
+    color: #000000;
+    font-size: 0.9em;
+    padding: 0.3em;
+    background-color: transparent;
+}
+
+.selected-filter {
+    background-color: #62EEA8;
+    color: #FFFFFF;
+    border-radius: 0.5em;
+}
+
+/* == Posts Section - Posts == */
+
+.post {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFE4BA;
+    padding: 0.8em;
+    border-radius: 0.5em;
+    gap: 0.4em;
+}
+
+/* = Posts Section - Posts - Header = */
+
+.post .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post .header h3 {
+    font-size: 1em;
+}
+
+.post .header img {
+    width: 2em;
+    height: 2em;
+}
+
+/* = Posts Section - Posts - Body = */
+
+.post p {
+    font-size: 0.9em;
+    line-height: 1.3em;
+}
+
+/* = Posts Section - Posts - Footer = */
+
+.post .footer {
+    display: flex;
+    align-self: flex-start;
+    gap: 0.4em;
+}
+
+.post .footer button {
+    font-size: 0.9em;
+    padding: 0.2em 0.8em;
+    box-shadow: 0px 2px 0px 0px #000000;
+    position: relative;
+}
+
+.post .footer button:hover {
+    top: 2px;
+    box-shadow: none;
+}
+
+.post .footer .edit-color {
+    background-color: #62EEA8;
+}
+
+.post .footer .delete-color {
+    background-color: #FF9F9F;
+}
+
+/* === Structure === */
+
+.container {
+    padding: 0.25rem;
+    max-width: 375px;
+}
+
+#logged-out-view .container {
+    margin: 2rem auto;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
+    gap: 1rem;
 }
 
 .form {
     display: flex;
     flex-wrap: wrap;
     color: #8F8F8F;
-    gap: 10px;
+    gap: 0.73rem;
 }
 
-.description,
+/* === Common for elements === */
+
+.post-input,
 input,
 button {
     letter-spacing: 0.2rem;
@@ -62,32 +222,40 @@ button {
     border-radius: 0.5rem;
     background-color: #232D3F;
     font-size: 1rem;
-    border: none;
+    border: 3px solid #000000;
 }
 
-.description {
-    font-size: 0.9375rem;
-    margin-top: 0.5rem;
-    padding: 0.75rem 1rem 4rem;
-    resize: none;
-}
-
-input {
-    width: 40%;
+input, button {
     text-align: center;
     padding: 1rem;
 }
 
-.description:focus,
-.description:hover,
+input:focus, button:focus, textarea:focus {
+    outline: none;
+}
+
+/* === Input fields === */
+.post-input {
+    height: 3rem;
+    margin-top: 0.5rem;
+    padding: 0.75rem 1rem 4rem;
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, .25);
+    resize: none;
+    overflow: hidden;
+}
+
+.post-input:focus,
+.post-input:hover,
 input:focus,
 input:hover {
     background-color: #D1D5DB;
     outline: none;
     cursor: pointer;
     color: #1B1924;
+    opacity: 1;
 }
 
+/* === Buttons === */
 button {
     font-weight: 700;
     font-size: 1.375rem;
@@ -102,22 +270,90 @@ button:focus {
     cursor: pointer;
 }
 
-main {
-    margin-bottom: 1rem;
+.primary-btn {
+    box-shadow: 0px 5px 0px 0px #000000;
+    position: relative;
 }
+
+.primary-btn:hover,
+.primary-btn:focus {
+    top: 5px;
+    box-shadow: none;
+}
+
+.secondary-btn {
+    padding: 0.4em;
+}
+
+.secondary-btn:hover,
+.secondary-btn:focus {
+    background-color: #1b1924;
+}
+
+.provider-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+    border: 0;
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, .25);
+}
+
+.provider-btn:hover {
+    transition: all 0.2s ease;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, .25);
+}
+
+.google-btn-logo {
+    width: 1.375rem;
+}
+
+#sign-out-btn , #sign-in-btn {
+    color: #000000;
+    background: none;
+    margin: 0;
+}
+
+.icon-img-btn{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 2.5em;
+    background-color: #607D8B;
+    border-radius: 100%;
+    padding: 0.3em;
+    margin: 0.5em;
+    transition: all 0.2s ease;
+}
+
+.icon-img-btn:hover,
+.icon-img-btn:focus {
+    background-color: #45a049;
+}
+
+/* === IDs view === */
+
+#default-view {
+    display: block;
+}
+
+#logged-out-view {
+    display: block;
+}
+
+#logged-in-view {
+    display: block;
+    margin: 0;
+}
+
 
 .endorsements {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 1rem;
-}
-
-h2 {
-    color: #FFF;
-    font-size: 1.25rem;
-    letter-spacing: 0.2rem;
-    text-align: center;
 }
 
 .endorsement {
@@ -176,24 +412,25 @@ h2 {
     cursor: pointer;
   }
 
+
 @media screen and (min-width: 768px) {
     body {
         font-size: 18px;
     }
 
-    .container {
-        max-width: 800px;
+    .container{
+        max-width: 520px;
     }
-      
+
     header {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         margin-bottom: 1rem;
     }
 
-    header h1 {
-        font-size: 3rem;
+    .app-title {
+        font-size: 2rem;
     }
 
     header img {
@@ -204,7 +441,7 @@ h2 {
         width: 100%;
     }
       
-    .description {
+    .post-input {
         flex: 1 1 100%;
     }
       
@@ -218,6 +455,10 @@ h2 {
         width: 100%;
         font-size: 2rem;
     }; 
+
+    .icon-img-btn {
+        width: 3em;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -228,7 +469,7 @@ h2 {
     }
     
     .container {
-        max-width: 1020px;
+        max-width: 750px;
         padding: 0 20px;
         background: none;
     }
@@ -236,12 +477,14 @@ h2 {
     header {
         width: 100%;
         font-family: 'Josefin Sans', sans-serif;
-        justify-content: space-evenly;
         background-color: #0F0F0F;
-        border-radius: 0 0 .5rem .5rem;
         box-shadow: 0 0 0.5rem #edecf2;
         padding: 1rem;
         margin: 0;
+    }
+
+    .app-title {
+        font-size: 3rem;
     }
 
     main {
@@ -258,7 +501,7 @@ h2 {
         padding: 1rem 1.5rem;
     }
 
-    .description {
+    .post-input {
         grid-area: 1 / 1 / 2 / 7;
     }
 
@@ -276,7 +519,7 @@ h2 {
         font-size: 1.5rem;
     }
 
-    .description,
+    .post-input,
     input {
         text-align: left;
         background-color: #232D3F;
@@ -286,6 +529,10 @@ h2 {
         grid-area: 3 / 1 / 4 / 7;
         font-size: 2rem;
         padding: 1rem;
+    }
+
+    .icon-img-btn {
+        width: 3.5em;
     }
 
     .endorsements{
@@ -300,6 +547,5 @@ h2 {
     h2 {
         color: #1B1924;
         font-size: 2rem;
-        margin: 0.75rem 0;
     }
 }
