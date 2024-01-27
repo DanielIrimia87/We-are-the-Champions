@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <title>Logged in</title>
+    <link rel="stylesheet" href="/index.css" />
+
+</head>
+
+<body>
+
+    <section id="logged-in-view">
+
+        <nav>
+            <header>
+                <a href="/index.html">
+                    <img src="/assets/images/freddie.png" alt="Freddie Mercury" />
+                </a>
+                <h1 class="app-title">We are the Champions</h1>
+            </header>
+
+            <a href="/index.html" id="sign-out-btn" class="icon-btn">
+                <img src="/assets/icons/icon-sign-out.svg" class="icon-img-btn">
+            </a>
+
+        </nav>
+
+        <section class="user-section">
+            <img src="/assets/gifs/jerryandthebird.gif" id="user-profile-picture">
+            <h2 id="user-greeting">Hello friend, how are you?</h2>
+        </section>
+
+        <main class="app-container container">
+
+            <form class="form post-section">
+                <textarea id="post-input" class="post-input" name="post input"
+                    placeholder="Write down a message to someone you appreciate..."></textarea>
+                <input type="text" id="inputFrom" name="from" placeholder="From" />
+                <input type="text" id="inputTo" name="to" placeholder="To" />
+                <button id="publishBtn" type="submit">Post</button>
+            </form>
+
+            <section class="filters-and-posts-section">
+
+                <section class="filters-section">
+                    <button id="today-filter-btn" class="filter-btn">Today</button>
+                    <button id="week-filter-btn" class="filter-btn">Week</button>
+                    <button id="month-filter-btn" class="filter-btn">Month</button>
+                    <button id="all-filter-btn" class="filter-btn">All</button>
+                </section>
+
+                <section id="posts" class="endorsements posts-section">
+
+                    <!-- <article class="endorsement">
+                        <h3 class="endorsement-header">To Leanne</h3>
+                        <p class="endorsement-content">Leanne! Thank you so much for helping me with the March
+                            accounting. Saved so much time because of you! 💜 Frode</p>
+                        <footer class="endorsement-footer">
+                            <h4 class="endorsement-author">From Frode</h4>
+                            <figure class="endorsement-likes">
+                                <img src="/assets/images/black-heart.png" alt="heart" />
+                                <span class="endorsement-likes-count">4</span>
+                            </figure>
+                            <button class="edit-endorsement">Edit</button>
+                            <button class="delete-endorsement">Delete</button>
+                        </footer>
+                    </article>
+
+                    <article class="endorsement">
+                        <h3 class="endorsement-header">To Abdellah</h3>
+                        <p class="endorsement-content">That transcription feature you completed for Scrimba 3.0 is
+                            amazing. I know you’ve been working hard on it for several months now. 👏👏👏 Really good
+                            work 🙌</p>
+                        <footer class="endorsement-footer">
+                            <h4 class="endorsement-author">From Sindre</h4>
+                            <figure class="endorsement-likes">
+                                <img src="/assets/images/black-heart.png" alt="heart" />
+                                <span class="endorsement-likes-count">7</span>
+                            </figure>
+                            <button class="edit-endorsement">Edit</button>
+                            <button class="delete-endorsement">Delete</button>
+                        </footer>
+                    </article>
+
+                    <article class="endorsement">
+                        <h3 class="endorsement-header">To Bob</h3>
+                        <p class="endorsement-content">Hi Bob! Your React Router course is so good. The students are
+                            going to LOVE IT. I’m so excited for the launch :) 🔥</p>
+                        <footer class="endorsement-footer">
+                            <h4 class="endorsement-author">From Per</h4>
+                            <figure class="endorsement-likes">
+                                <img src="/assets/images/black-heart.png" alt="heart">
+                                <span class="endorsement-likes-count">20</span>
+                            </figure>
+                            <button class="edit-endorsement">Edit</button>
+                            <button class="delete-endorsement">Delete</button>
+                        </footer>
+                    </article> -->
+
+                </section>
+
+            </section>
+
+        </main>
+
+    </section>
+
+</body>
+
+</html>
