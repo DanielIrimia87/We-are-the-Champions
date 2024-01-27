@@ -22,7 +22,7 @@ Head over to https://vitejs.dev/ to learn more about using vite.
 
 ## Live Demo
 - [We are the Champions](https://danielirimia87.github.io/We-are-the-Champions/)
-- [Netlify](https://the-champions-appreciation.netlify.app/)
+- [Netlify][The champions appreciation](https://the-champions-appreciation.netlify.app/)
 
 ## Getting Started
 To get a local copy up and running follow these simple steps.
